@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #F4F4F4;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #095a55;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .menu ul li {
+            margin-right: 20px;
+        }
+        
+        .menu ul li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .menu ul li a:hover {
+            color: #FFC185;
+        }
+        
+        .search {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search input[type="search"] {
+            border: none;
+            padding: 8px;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .search button {
+            background-color: #095a55;
+            border: none;
+            color: #FFF;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .search button:hover {
+            background-color: #FF9C5F;
+        }
+        
+        .content {
+            background-color: #FFF;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .form input[type="text"],
+        .form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #AAA;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .form input[type="submit"] {
+            background-color: #095a55;
+            border: none;
+            color: #FFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .form input[type="submit"]:hover {
+            background-color: #095a55;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2 class="logo">Recharge Heaven</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="login.html">HOME</a></li>
+                <li><a href="">REGISTER</a></li>
+                <li><a href="#">OFFERS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type To text">
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="form">
+            <h2>Create an Account</h2>
+            <form action="register" method="get">
+                <label for="cname">Enter Customer Name:</label>
+                <input type="text" name="cname" id="cname">
+                <br>
+                <label for="uname">Enter Username:</label>
+                <input type="text" name="uname" id="uname">
+                <br>
+                <label for="accno">Enter Account Number:</label>
+                <input type="text" name="accno" id="accno">
+                <br>
+                <label for="pass">Enter Account Password:</label>
+                <input type="password" name="pass" id="pass">
+                <br>
+                <label for="phoneno">Enter Phone Number:</label>
+                <input type="text" name="phoneno" id="phoneno">
+                <br>
+                <label for="accbal">Enter Account Balance:</label>
+                <input type="text" name="accbal" id="accbal">
+                <br>
+                <input type="submit" value="Create Account">
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
